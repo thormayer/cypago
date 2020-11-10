@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="left">
+        <div class="logo">
+            <img [src]="getIcon(item.title)" width="50" />
+        </div>
+
+        <div class="lists-container">
+            <access-control-list [data]="item.accessPermission" [columns]="3"></access-control-list>
+
+            <access-control-list [data]="item.noMFA" [columns]="1"></access-control-list>
+
+        </div>
+    </div>
+
+    <div class="right">
+        <cypago-progress-bar [percentage]="item.progressPercentage"></cypago-progress-bar>
+
+        <div class="raw-container">
+            <div class="svg">
+                <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.8667 8.33331C24.9333 3.79998 20.9333 0.333313 16 0.333313C12.1333 0.333313 8.8 2.46665 7.2 5.66665C3.06667 6.19998 0 9.53331 0 13.6666C0 18.0666 3.6 21.6666 8 21.6666H25.3333C29.0667 21.6666 32 18.7333 32 15C32 11.5333 29.2 8.59998 25.8667 8.33331ZM22.6667 12.3333L16 19L9.33333 12.3333H13.3333V6.99998H18.6667V12.3333H22.6667Z" fill="black"/>
+                </svg>                    
+            </div>
+            <div class="text">
+                Raw Data
+            </div>
+        </div>
+    </div>
+</div>

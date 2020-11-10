@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="top">
+        <div class="title">
+            Excess permission
+        </div>
+        <div class="remediate">
+            Remediate
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="table-header" 
+            [style]="{'grid-template-columns': '1fr '.repeat(this.columns)}">
+            
+            <div class="table-header-item" 
+                *ngFor="let headerItem of data.headers">
+                    {{headerItem}}
+            </div>
+            
+        </div>
+        <div class="table-wrapper">
+            <div class="table-content" 
+                *ngFor="let dataItem of data.data">
+                <div class="row" 
+                    [style]="{'grid-template-columns': '1fr '.repeat(this.columns)}">
+            
+                    <div class="table-content-item" 
+                        [title]="dataItem[key]"
+                        *ngFor="let key of dataItem | keys">
+                        
+                            {{dataItem[key]}}
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

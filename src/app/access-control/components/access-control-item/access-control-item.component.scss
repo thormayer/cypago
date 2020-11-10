@@ -1,0 +1,51 @@
+.container{
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    .left{
+        .logo{
+            border-bottom: 1px solid #E5E5E5;
+            width: 85px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+        .lists-container{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            access-control-list{
+                flex: 1;
+
+                &:first-child{
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    .right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        cypago-progress-bar{ 
+            display: block;
+            width: 150px;
+        }
+
+        .raw-container{
+            color: #000;
+            text-align: center;
+            width: 92px;
+            .svg{
+
+            }
+            .text{
+                font-size: 12px;
+            }
+        }
+    }
+}

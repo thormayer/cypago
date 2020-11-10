@@ -1,0 +1,23 @@
+.wrapper{
+
+    background-color: #040E26;
+
+    .container{
+        margin: 0 auto;
+        width: 1200px;
+
+        .list-container{
+            display: flex;
+            align-items: center;
+            height: 90px;
+            padding: 0 90px;
+
+            .list-item{
+                color: #fff;
+                border-bottom: 2px solid #B5DBFB;
+                margin-right: 38px;
+                padding: 10px;
+            }
+        }
+    }
+}

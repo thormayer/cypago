@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 10px;
+
+    background-color: #B5DBFB;
+    .value{
+        transition: 0.3s all ease-in-out;
+        height: 10px;
+        background-color: #00CD33;
+    }
+}

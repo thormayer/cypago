@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="container">
+        
+
+        <div class="breadcrumbs-container">
+            Access Control / Development tools access control restriction
+        </div>
+
+
+        <cypago-card>
+            <div class="desc-container">
+                <span class="bold-span">Description: </span> 
+                Permission to the access to source control tool, build (CI/CD) tool and change management tool is restricted to authorized personnel and is performed using a two-factors authentication method
+            </div>
+            <div class="pencil-container">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.538 0.379395L21.5983 4.21094C22.1343 4.7168 22.1343 5.54395 21.5983 6.04981L19.3526 8.16895L13.3437 2.49854L15.5894 0.379395C16.1254 -0.126465 17.002 -0.126465 17.538 0.379395ZM12.7099 8.91919V8.9209C12.8765 9.07813 12.9598 9.28662 12.9598 9.4917C12.9598 9.69678 12.8765 9.90357 12.7099 10.0625V10.0642L12.7081 10.0659L7.2606 15.2083H7.25879C7.2117 15.2527 7.15918 15.2903 7.10666 15.3228H7.10485C7.05052 15.3552 6.99438 15.3809 6.93643 15.3997C6.6358 15.4988 6.28628 15.4338 6.04723 15.2083H6.04542V15.2065C5.99833 15.1621 5.95849 15.1126 5.92408 15.063V15.0613C5.88967 15.01 5.86251 14.957 5.84259 14.9023C5.73755 14.6187 5.80637 14.2888 6.04361 14.0632V14.0615L11.4929 8.91919H11.4947C11.6613 8.76196 11.8823 8.68335 12.0996 8.68335C12.3169 8.68335 12.536 8.76196 12.7045 8.91919H12.7099ZM8.23672 18.6467C6.61045 19.1218 4.98598 19.5952 3.35971 20.0703C-0.461497 21.1863 -0.445198 21.9297 0.597937 18.457L2.24051 12.9883L2.23508 12.9832L12.2064 3.57178L18.2153 9.24219L8.24216 18.6536L8.23672 18.6467ZM3.26554 13.9556L7.2117 17.6794C6.14321 17.9905 5.07472 18.3015 4.00805 18.6108C1.498 19.3406 1.50887 19.8294 2.19161 17.5479L3.26554 13.9556Z" fill="black"/>
+                </svg>
+            </div>        
+        </cypago-card>
+
+
+        <!-- ITEM -->
+        <cypago-card *ngFor="let item of accessControlItemList">
+            <access-control-item [item]="item"></access-control-item>
+        </cypago-card>
+        <!-- ITEM -->
+    </div>
+</div>
